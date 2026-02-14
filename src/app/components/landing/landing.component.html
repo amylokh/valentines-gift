@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="card">
+    <div class="emoji-hearts">
+      ❤️ 💕 🎉
+    </div>
+    
+    <h1 class="question">Will you be my Valentine?</h1>
+    
+    <div class="button-container">
+      <button class="btn btn-yes" (click)="onYesClick()">
+        Yes 💚
+      </button>
+    </div>
+
+    <div class="no-button-wrapper">
+      <button 
+        class="btn btn-no"
+        [attr.style]="noButtonStyle"
+        (click)="onNoClick($event)"
+        (mouseenter)="onNoHover()"
+        (mousemove)="onNoHover()"
+        (pointerdown)="onNoClick($event)"
+        (touchstart)="onNoClick($event)"
+      >
+        No 😅
+      </button>
+    </div>
+    
+    <div class="footer-text">
+      Choose wisely... 😉
+    </div>
+  </div>
+</div>
